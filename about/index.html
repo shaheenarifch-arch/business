@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+  <title>About BusinessBuy.site | Business Acquisition Resources</title>
+  <meta name="description" content="Learn about BusinessBuy.site and its educational resources for business valuation, SBA financing, due diligence, deal sourcing, and acquisition planning.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#0c1726">
+
+  https://businessbuy.site/about/
+  /favicon.ico
+  /favicon-32x32.png
+  /apple-touch-icon.png
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BusinessBuy.site">
+  <meta property="og:title" content="About BusinessBuy.site | Business Acquisition Resources">
+  <meta property="og:description" content="Learn about BusinessBuy.site and its educational resources for business buyers.">
+  <meta property="og:url" content="https://businessbuy.site/about/">
+  <meta property="og:image" content="https://businessbuy.site/hero-businesses.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About BusinessBuy.site">
+  <meta name="twitter:description" content="Educational resources for researching, evaluating, financing, and acquiring established businesses.">
+  <meta name="twitter:image" content="https://businessbuy.site/hero-businesses.webp">
+
+  <style>
+    :root {
+      --navy: #0c1726;
+      --navy2: #1c3150;
+      --gold: #b08d57;
+      --gold2: #cbae7c;
+      --ivory: #f7f5f0;
+      --paper: #ffffff;
+      --line: #e4e0d6;
+      --text: #1b2433;
+      --muted: #5e6878;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .max {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+      z-index: 100;
+      padding: 10px 14px;
+      background: #fff;
+      color: var(--navy);
+    }
+
+    .topbar {
+      background: #07101c;
+      color: #cad2dd;
+      font-size: 12px;
+    }
+
+    .topbar-inner {
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .topbar a {
+      text-decoration: none;
+    }
+
+    .topbar a:hover {
+      color: var(--gold2);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      color: var(--navy);
+      text-decoration: none;
+      font: 600 26px var(--serif);
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      background: var(--navy);
+      color: #fff;
+      padding: 11px 18px;
+    }
+
+    .nav-cta:hover {
+      color: #fff;
+      background: var(--navy2);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      color: #fff;
+      padding: 92px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold2);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 950px;
+      margin: 16px 0 22px;
+      font: 500 clamp(42px, 6vw, 70px)/1.05 var(--serif);
+    }
+
+    h1 em {
+      color: var(--gold2);
+      font-weight: 400;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 0;
+      color: #c5ceda;
+      font-size: 18px;
+    }
+
+    .content {
+      padding: 80px 0;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+      gap: 50px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 36px;
+    }
+
+    .article h2 {
+      margin: 40px 0 12px;
+      color: var(--navy);
+      font: 500 34px/1.15 var(--serif);
+    }
+
+    .article h2:first-child {
+      margin-top: 0;
+    }
+
+    .article p,
+    .article li {
+      color: var(--muted);
+    }
+
+    .article ul {
+      padding-left: 22px;
+    }
+
+    .article li {
+      margin-bottom: 10px;
+    }
+
+    .notice {
+      margin: 28px 0;
+      padding: 20px;
+      background: #fbfaf6;
+      border-left: 4px solid var(--gold);
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      color: var(--navy);
+      font: 600 26px var(--serif);
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      color: var(--gold);
+    }
+
+    footer {
+      background: var(--navy);
+      color: #bac4d0;
+      padding: 55px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-logo {
+      color: #fff;
+      font: 600 29px var(--serif);
+    }
+
+    .footer-logo span {
+      color: var(--gold2);
+    }
+
+    footer h2 {
+      margin-top: 0;
+    }
+
+    footer h3 {
+      color: var(--gold2);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    footer a {
+      display: block;
+      color: #e1e6ed;
+      text-decoration: none;
+      padding: 3px 0;
+      font-size: 13px;
+    }
+
+    footer a:hover {
+      color: var(--gold2);
+    }
+
+    .footer-bottom {
+      margin-top: 38px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 12px;
+    }
+
+    @media (max-width: 800px) {
+      .header-inner {
+        min-height: 64px;
+      }
+
+      nav a:not(.nav-cta) {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .content {
+        padding: 55px 0;
+      }
+
+      .content-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 25px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .topbar-inner span,
+      .topbar-inner a:last-child {
+        display: none;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .nav-cta {
+        padding: 9px 13px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://businessbuy.site/about/#webpage",
+        "url": "https://businessbuy.site/about/",
+        "name": "About BusinessBuy.site",
+        "description": "Learn about BusinessBuy.site and its educational resources for business valuation, SBA financing, due diligence, deal sourcing, and acquisition planning.",
+        "isPartOf": {
+          "@id": "https://businessbuy.site/#website"
+        },
+        "publisher": {
+          "@id": "https://businessbuy.site/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://businessbuy.site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://businessbuy.site/about/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  #mainSkip to main content</a>
+
+  <div class="topbar">
+    <div class="max topbar-inner">
+      <span>Educational resources for business buyers</span>
+      <a href="mailto:agents@getservices.ai">agents@getservices.ai</a>
+      tel:+13137291534+1 (313) 729-1534</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="max header-inner">
+      /BusinessBuy<span>.site</span></a>
+
+      <nav aria-label="Primary navigation">
+        /Home</a>
+        /blog/Insights</a>
+        /services/Services</a>
+        /about/About</a>
+        /contact/Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="max">
+        <div class="eyebrow">About BusinessBuy.site</div>
+
+        <h1>
+          Helping buyers make
+          <em>better-informed acquisition decisions.</em>
+        </h1>
+
+        <p>
+          BusinessBuy.site provides educational resources for entrepreneurs
+          researching, evaluating, financing, and acquiring established
+          businesses.
+        </p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="max content-grid">
+        <article class="card article">
+          <h2>Our purpose</h2>
+
+          <p>
+            BusinessBuy.site helps prospective buyers understand the major
+            stages of acquiring a business, from defining investment criteria
+            and screening opportunities to valuation, financing, due diligence,
+            negotiation, closing, and transition planning.
+          </p>
+
+          <h2>What we publish</h2>
+
+          <ul>
+            <li>
+              Business valuation guidance covering Seller's Discretionary
+              Earnings, EBITDA, normalized add-backs, cash flow quality, and
+              market multiples.
+            </li>
+      
