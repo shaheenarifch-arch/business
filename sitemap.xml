@@ -1,35 +1,29 @@
-<url>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://businessbuy.site/</loc>
+  </url>
+
+  <url>
     <loc>https://businessbuy.site/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-</url>
+  </url>
 
-<url>
+  <url>
     <loc>https://businessbuy.site/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-</url>
+  </url>
 
-<url>
+  <url>
     <loc>https://businessbuy.site/privacy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
-</url>
+  </url>
 
-<url>
+  <url>
     <loc>https://businessbuy.site/terms/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
-</url>
+  </url>
 
-<url>
+  <url>
     <loc>https://businessbuy.site/affiliate-disclosure/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
-</url>
+  </url>
 
-<url>
-    <loc>https://businessbuy.site/faq/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-</url>
+</urlset>
