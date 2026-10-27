@@ -5,5 +5,19 @@
     "description": "Learn how to find subscription based businesses for sale, compare marketplaces, avoid mistakes, and evaluate recurring revenue models before you buy.",
     "file": "how-to-find-subscription-based-businesses-for-sale.html",
     "date": "2026-10-05"
+  },
+  {
+    "keyword": "how to purchase an established food service business",
+    "title": "How to Purchase an Established Food Service Business",
+    "description": "Learn how to purchase an established food service business step by step, from budgeting and due diligence to licensing, financing, and closing.",
+    "file": "how-to-purchase-an-established-food-service-business.html",
+    "date": "2026-10-24",
+    "archetype": "how_to",
+    "archetype_confidence": 0.83,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 8.0
   }
 ]
