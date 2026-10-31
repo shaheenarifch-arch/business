@@ -19,5 +19,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 8.0
+  },
+  {
+    "keyword": "How to buy a small business: complete guide from search to closing",
+    "title": "How to Buy a Small Business: Complete Guide",
+    "description": "How to buy a small business: complete guide from search to closing, covering valuation, financing, due diligence, and negotiation for buyers.",
+    "file": "how-to-buy-a-small-business-complete-guide-from-search-to-closing.html",
+    "date": "2026-10-31",
+    "archetype": "authority_guide",
+    "archetype_confidence": 0.97,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 9.4
   }
 ]
