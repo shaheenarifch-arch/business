@@ -33,5 +33,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 9.4
+  },
+  {
+    "keyword": "best document scanner for small business under $200",
+    "title": "Find the Best Document Scanner for Small Business Under $200",
+    "description": "Find the best document scanner for small business under $200. Compare features, avoid mistakes, and choose the right fit with this buying guide.",
+    "file": "best-document-scanner-for-small-business-under-200.html",
+    "date": "2026-11-01",
+    "archetype": "buying_guide",
+    "archetype_confidence": 0.55,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": false,
+    "eeat_score": 100,
+    "seo_aeo_score": 7.94
   }
 ]
