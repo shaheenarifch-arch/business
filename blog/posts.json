@@ -47,5 +47,19 @@
     "google_quality_passed": false,
     "eeat_score": 100,
     "seo_aeo_score": 7.94
+  },
+  {
+    "keyword": "how to pick the perfect birthday gift for him",
+    "title": "How to Pick the Perfect Birthday Gift for Him: Guide",
+    "description": "Learn how to pick the perfect birthday gift for him with a step-by-step guide covering sizing, personalization, timing, and common mistakes to avoid.",
+    "file": "how-to-pick-the-perfect-birthday-gift-for-him.html",
+    "date": "2026-11-09",
+    "archetype": "how_to",
+    "archetype_confidence": 0.67,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 9.25
   }
 ]
