@@ -1,0 +1,4 @@
+# Old country pages (Google reports these as 404) -> matching guides.
+# Help: https://developers.cloudflare.com/pages/configuration/redirects/
+/canada     /blog/businesses-for-sale-canada-ontario-bc-alberta/     301
+/australia  /blog/businesses-for-sale-australia-sydney-melbourne/    301
