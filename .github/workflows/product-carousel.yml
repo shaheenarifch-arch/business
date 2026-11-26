@@ -19,6 +19,7 @@ jobs:
           import pathlib, re
           tag = '<script async src="https://chambelli.getservices.ai/widget.js" data-api="https://chambelli.getservices.ai" data-site="businessbuy" data-placement="article-footer" data-title="Shop Chambelli picks"></script>\n'
           old = re.compile(r'[ \t]*<script[^>]*src="https://atlas-api-v2\.python-tester\.workers\.dev/hub/carousel\.js"[^>]*>\s*</script>\n?')
+          cham = re.compile(r'[ \t]*<script[^>]*src="https://chambelli\.getservices\.ai/widget\.js"[^>]*>\s*</script>\n?')
           skip = re.compile(r"(^|/)(404|privacy|terms|disclosure|cookie|google[0-9a-f]+)[^/]*\.html$", re.I)
           bottom = re.compile(r"(contact|checkout|thank|accessib|disclaim|dmca|refund|return)", re.I)
           changed = 0
@@ -28,14 +29,20 @@ jobs:
                   continue
               s0 = s = p.read_text(encoding="utf-8", errors="ignore")
               s = old.sub("", s)
-              if "chambelli.getservices.ai/widget.js" not in s and not skip.search(rel):
-                  m = re.search(r"<main[^>]*>\n?", s)
-                  if m and not bottom.search(rel):
-                      s = s[:m.end()] + tag + s[m.end():]
-                  else:
-                      i = s.lower().rfind("</body>")
-                      if i >= 0:
-                          s = s[:i] + tag + s[i:]
+              if not skip.search(rel):
+                  # Keep the carousel just above the footer: end of <main>, else before <footer>, else before </body>.
+                  s = cham.sub("", s)
+                  low = s.lower()
+                  i = low.rfind("</main>")
+                  if i < 0:
+                      i = low.rfind("<footer")
+                  if i < 0:
+                      i = low.rfind("</body>")
+                  if i >= 0:
+                      j = s.rfind("\n", 0, i) + 1
+                      if s[j:i].strip() == "":
+                          i = j
+                      s = s[:i] + tag + s[i:]
               if s != s0:
                   p.write_text(s, encoding="utf-8")
                   changed += 1
