@@ -20,6 +20,7 @@ jobs:
           tag = '<script async src="https://chambelli.getservices.ai/widget.js" data-api="https://chambelli.getservices.ai" data-site="businessbuy" data-placement="article-footer" data-title="Shop Chambelli picks"></script>\n'
           old = re.compile(r'[ \t]*<script[^>]*src="https://atlas-api-v2\.python-tester\.workers\.dev/hub/carousel\.js"[^>]*>\s*</script>\n?')
           cham = re.compile(r'[ \t]*<script[^>]*src="https://chambelli\.getservices\.ai/widget\.js"[^>]*>\s*</script>\n?')
+          css = '<style id="chambelli-pos">.chambelli-carousel{width:min(1200px,100% - 64px);margin-left:auto;margin-right:auto}</style>\n'
           skip = re.compile(r"(^|/)(404|privacy|terms|disclosure|cookie|google[0-9a-f]+)[^/]*\.html$", re.I)
           bottom = re.compile(r"(contact|checkout|thank|accessib|disclaim|dmca|refund|return)", re.I)
           changed = 0
@@ -43,6 +44,10 @@ jobs:
                       if s[j:i].strip() == "":
                           i = j
                       s = s[:i] + tag + s[i:]
+                      if 'id="chambelli-pos"' not in s:
+                          h = s.lower().find("</head>")
+                          if h >= 0:
+                              s = s[:h] + css + s[h:]
               if s != s0:
                   p.write_text(s, encoding="utf-8")
                   changed += 1
